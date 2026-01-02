@@ -1,73 +1,61 @@
-# Welcome to your CropCast project
+# CropCast 🌾
 
-## Project info
+CropCast is a simple React web application built using Vite.  
+It displays crop-related data and dashboards with a clean and modern UI.
 
-**URL**: https://CropCast.dev/projects/REPLACE_WITH_PROJECT_ID
+## Tech Stack
 
-## How can I edit this code?
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use CropCast**
-
-Simply visit the [CropCast Project](https://CropCast.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via CropCast will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in CropCast.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Install dependencies
+```bash
+npm install
+# or
+bun install
 ```
 
-**Edit a file directly in GitHub**
+### Run the project
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run dev
+# or
+bun run dev
+```
 
-**Use GitHub Codespaces**
+Open the app in your browser at: http://localhost:5173
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+public/
+  favicon.png        # Browser tab icon
 
-This project is built with:
+src/
+  components/        # UI components
+  pages/             # Pages (Landing, Dashboard, etc.)
+  data/              # Static / mock data
+  App.tsx
+  main.tsx
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+index.html
+vite.config.ts
+```
 
-## How can I deploy this project?
+## Notes
+* Static files like images and favicons go in the `public/` folder
+* The app starts from `src/main.tsx`
+* Styling is handled using Tailwind CSS
 
-Simply open [CropCast](https://CropCast.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Build for Production
 
-## Can I connect a custom domain to my CropCast project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.CropCast.dev/features/custom-domain#custom-domain)
+```bash
+npm run build
+# or
+bun run build
+```
